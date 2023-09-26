@@ -1,0 +1,55 @@
+/* style.css */
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #ff8c00, #ff2c84);
+}
+
+.App {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+input[type="email"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+
+button {
+  background-color: #ff2c84;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #ff007f;
+}
+
+p {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Add more styles as needed */
+.header {
+  font-size: 2rem;
+  color: #ff2c84;
+  margin-bottom: 20px;
+}
