@@ -14,8 +14,8 @@ app.use(cors()); // Use the 'cors' middleware
 const transporter = nodemailer.createTransport({
   service: 'Gmail', // Replace with your email service (e.g., 'Gmail')
   auth: {
-    user: 'me.nasimkt@gmail.com', // Sender email address
-    pass: 'crzaxyvgtuwuetbl',    // Sender email password
+    user: '', // Sender email address
+    pass: '',    // Sender email password
   },
 });
 
@@ -36,7 +36,7 @@ app.post('/sendOTP', async (req, res) => {
 
   // Define email message options
   const mailOptions = {
-    from: '9656484315@gptcthirurangadi.in', // Sender email address
+    from: '', // Sender email address
     to: email,
     subject: 'Your OTP for Login',
     text: `Your OTP is: ${otp}`,
