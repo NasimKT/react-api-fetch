@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Initialize Twilio account SID and auth token
-const twilioClient = twilio('AC640cad353854b29d2df0d7c9031b5b8a', 'ca2a89f6e7b029c68f14537ad939ff5d');
+const twilioClient = twilio('twilio sid', 'auth token');
 
 // A map to store generated OTPs, where keys are phone numbers and values are OTPs
 const otpMap = new Map();
@@ -32,7 +32,7 @@ app.post('/sendOTP', async (req, res) => {
     // Send an SMS with OTP using Twilio
     await twilioClient.messages.create({
       body: `Your OTP is: ${otp}`,
-      from: '+12562978668',
+      from: 'twilio number',
       to: phoneNumber,
     });
 
